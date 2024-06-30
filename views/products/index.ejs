@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="/stylesheets/index.css" />
+  <title>All My Notes</title>
+  <style>
+    body {
+      background-image: url('/stylesheets/photo-4.jpg');
+      background-size: cover;
+
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="header">My Notes</h1>
+
+
+  <a class="btn btn-info" class="card text-center" id="new" href="/products/new">Add New Notes</a>
+  <div class="row">
+
+    <% for(let product of products) { %>
+
+      <div class="card col-lg-3 col-md-4 col-sm-6 " class="card text-center" id="each">
+
+        <div class="card-body overflow-hidden" style="height: 200px;"
+          onclick="window.location.href = '/products/<%=product._id%>';">
+          <!-- <div class="card-body" style="height: 150px; overflow-y: auto;"> -->
+          <h5 class="card-title">
+            <%= product.title %>
+          </h5>
+          <p class="card-text">
+            <%= product.description %>
+          </p>
+        </div>
+
+
+
+      </div>
+      <% } %>
+  </div>
+
+
+</body>
+
+</html>

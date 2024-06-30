@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;1,100&family=Ysabeau:ital,wght@1,1&display=swap');
+
+* {
+    text-align: center;
+    font-style: url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;1,100&family=Ysabeau:ital,wght@1,1&display=swap');
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn btn-info {
+    text-align: center;
+}
+
+#new {
+    align-items: center;
+    position: relative;
+    text-align: center;
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    padding: 1vw;
+    font-size: 2vw;
+    margin-left: 35%;
+    margin-right: 35%;
+    color: rgb(253, 253, 253);
+    justify-content: center;
+}
+
+#each {
+    align-items: center;
+    position: relative;
+    background-color: rgb(156, 7, 255);
+    color: rgb(6, 252, 207);
+    margin: 5vw;
+    font-size: 3vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: solid 5px rgb(15, 155, 230);
+}
+
+#each:hover {
+    cursor: pointer;
+    transform: scale(1.011);
+    transition-duration: 0.005ms;
+    color: blueviolet;
+    background-color: aqua;
+}
+
+#header {
+    color: transparent;
+    padding: 5px;
+    animation: effect 2s linear infinite;
+    font-size: 8vw;
+}
+
+@keyframes effect {
+    0% {
+        background: linear-gradient(#25ec25, #7b05f9);
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(#7b05f9, #25ec25);
+        -webkit-background-clip: text;
+    }
+}

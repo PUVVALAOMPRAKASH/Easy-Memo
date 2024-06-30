@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;1,100&family=Ysabeau:ital,wght@1,1&display=swap');
+
+* {
+    text-align: center;
+    align-items: center;
+    color: aqua;
+    margin: 8%;
+    font-style: url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;1,100&family=Ysabeau:ital,wght@1,1&display=swap');
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#data {
+    background-image: url('/stylesheets/photo-1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25%;
+    font-size: 2vw;
+}
+
+
+h1 {
+    font-size: 3vw;
+    color: green;
+}
